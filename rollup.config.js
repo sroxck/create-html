@@ -2,7 +2,7 @@
  * @Author: sroxck
  * @Date: 2023-01-11 15:30:29
  * @LastEditors: sroxck
- * @LastEditTime: 2023-01-11 16:06:56
+ * @LastEditTime: 2023-01-11 17:43:31
  * @Description: 
  */
 import path from 'path'
@@ -42,22 +42,4 @@ export default [
       })
     ]
   },
-  // {
-  //   input,
-  //   output: [
-  //     {
-  //       name: 'umd-ss.js',
-  //       dir: 'dist',
-  //       format: 'umd'
-  //     }
-  //   ],
-  //   plugins: [
-  //     terser(),
-  //     esbuild({
-  //       include: /\.[jt]s$/,
-  //       minify: process.env.NODE_ENV === 'production',
-  //       target: 'es2015'
-  //     })
-  //   ]
-  // }
 ]

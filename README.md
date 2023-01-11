@@ -1,5 +1,5 @@
 # parser-vnode
-通过指定格式对象字面量(通常是VNode)创建并渲染DOM  
+通过指定格式对象字面量(通常是VNode)创建并渲染DOM
 
 
 

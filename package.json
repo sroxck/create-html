@@ -1,6 +1,6 @@
 {
   "name": "parser-vnode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "packageManager": "pnpm@7.13.4",
   "scripts": {
@@ -15,10 +15,17 @@
   },
   "dependencies": {
     "@types/node": "^18.0.0",
+    "parser-vnode": "^0.0.2",
     "rollup": "^2.75.7",
     "rollup-plugin-esbuild": "^5.0.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.34.1",
     "sims-tools": "^0.5.5"
-  }
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts"
 }
