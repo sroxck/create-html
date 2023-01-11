@@ -1,5 +1,5 @@
 {
-  "name": "create-html",
+  "name": "parser-vnode",
   "version": "0.0.1",
   "type": "module",
   "packageManager": "pnpm@7.13.4",

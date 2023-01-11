@@ -1,4 +1,4 @@
-# create-html
+# parser-vnode
 通过指定格式对象字面量(通常是VNode)创建并渲染DOM  
 
 
@@ -11,7 +11,7 @@
 ## Install
 
 ``` zsh
-pnpm i create-html -S
+pnpm i parser-vnode -S
 ```
 
 
@@ -19,11 +19,11 @@ pnpm i create-html -S
 
 
 ``` js
-import { createHTML } from 'create-html'
+import { createHTML } from 'parser-vnode'
 const toptic = () => {
   return {
     tag: 'h3',
-    children: [h1, 'h3']
+    children: ['h1', 'h3']
   }
 }
 
