@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- <script type="module" src="/src/main.ts"></script> -->
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- <script type="module" src="/src/main.ts"></script> -->
+</body>
+
 </html>
 <script type="module">
-import {createHTML} from './dist/create-html.js'
-const toptic = ()=>{
-  return {
-    tag:'h3',
-      children:[h1,'h3']
+  import { createHTML } from './dist'
+  
+  const toptic = () => {
+    return {
+      tag: 'h3',
+      children: [h1, 'h3']
+    }
   }
-}
 
-const h1 = ()=>{
-  return {
-    tag:'h1',
-    children:'测试'
+  const h1 = () => {
+    return {
+      tag: 'h1',
+      children: '测试'
+    }
   }
-}
-createHTML({tag:'h1',props:{},children:[toptic,'顶级h1']},'#app')
+
+  createHTML({
+    tag: 'h1',
+    props: {},
+    children: [toptic, '顶级h1']
+  }, '#app')
 </script>
