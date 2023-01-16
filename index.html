@@ -33,7 +33,12 @@
 
   createHTML({
     tag: 'h1',
-    props: {},
+    props: {
+      onClick:(e)=>{
+        e.preventDefault()
+        console.log('res')
+      }
+    },
     children: [toptic, '顶级h1']
   }, '#app')
 </script>

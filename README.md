@@ -23,7 +23,7 @@ import { createHTML } from 'parser-vnode'
 const toptic = () => {
   return {
     tag: 'h3',
-    children: ['h1', 'h3']
+    children: [h1, 'h3']
   }
 }
 
