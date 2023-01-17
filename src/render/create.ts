@@ -1,3 +1,10 @@
+/*
+ * @Author: sroxck
+ * @Date: 2023-01-11 14:23:53
+ * @LastEditors: sroxck
+ * @LastEditTime: 2023-01-17 10:30:38
+ * @Description: 
+ */
 import { createHTML } from "./index"
 
 function createComponent(vNode: Vnode, container: Element) {
@@ -7,7 +14,9 @@ function createComponent(vNode: Vnode, container: Element) {
   }
 }
 
-
+function createDom(tag:string):HTMLElement{
+  return document.createElement(tag)
+}
 function render(vNode: Vnode, container: Element) {
   const el = document.createElement(vNode.tag as string)
   for (const key in vNode.props) {
@@ -44,5 +53,6 @@ function render(vNode: Vnode, container: Element) {
 }
 export {
   createComponent,
+  createDom,
   render
 }
